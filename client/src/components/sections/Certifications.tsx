@@ -20,7 +20,7 @@ const certifications = [
   },
   {
     name: "Software Testing",
-    organization: "Quantum Academy",
+    organization: "Bug spotter",
     icon: FaCheckCircle,
   },
   {

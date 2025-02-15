@@ -100,8 +100,8 @@ export default function Resume() {
           <h1 className="text-4xl font-bold">Rushikesh Bhosle</h1>
           <h2 className="text-xl text-primary mt-2">RPA Developer</h2>
           <div className="mt-2 text-muted-foreground">
-            <p>Email: your.email@example.com</p>
-            <p>Location: Your Location</p>
+            <p>Email: bhoslerushikesh27@gmail.com</p>
+            <p>Location: Pune</p>
           </div>
         </div>
 
