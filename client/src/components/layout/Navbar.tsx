@@ -7,8 +7,16 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="h-16 flex items-center justify-between">
           <Link href="/">
-            <a className="text-xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Rushikesh Bhosle
+            <a className="text-xl font-bold">
+              <span className="text-[#4285F4]">R</span>
+              <span className="text-[#DB4437]">u</span>
+              <span className="text-[#F4B400]">s</span>
+              <span className="text-[#4285F4]">h</span>
+              <span className="text-[#0F9D58]">i</span>
+              <span className="text-[#DB4437]">k</span>
+              <span className="text-[#4285F4]">e</span>
+              <span className="text-[#F4B400]">s</span>
+              <span className="text-[#0F9D58]">h</span>
             </a>
           </Link>
           <div className="flex items-center gap-6">
@@ -16,7 +24,7 @@ export default function Navbar() {
               <a
                 key={section}
                 href={`#${section.toLowerCase()}`}
-                className="text-sm font-medium hover:text-primary transition"
+                className="text-sm font-medium hover:text-[#4285F4] transition"
               >
                 {section}
               </a>
