@@ -11,19 +11,19 @@ export default function Home() {
       <Navbar />
       <main className="container mx-auto px-4 py-20">
         <div className="space-y-32">
-          <div className="bg-white rounded-lg shadow-sm p-8">
+          <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-sm p-8 hover:bg-white/80 transition-colors">
             <About />
           </div>
-          <div className="bg-[#F8F9FA] rounded-lg shadow-sm p-8">
+          <div className="bg-[#F8F9FA]/50 backdrop-blur-sm rounded-lg shadow-sm p-8 hover:bg-[#F8F9FA]/80 transition-colors">
             <Education />
           </div>
-          <div className="bg-white rounded-lg shadow-sm p-8">
+          <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-sm p-8 hover:bg-white/80 transition-colors">
             <Skills />
           </div>
-          <div className="bg-[#F8F9FA] rounded-lg shadow-sm p-8">
+          <div className="bg-[#F8F9FA]/50 backdrop-blur-sm rounded-lg shadow-sm p-8 hover:bg-[#F8F9FA]/80 transition-colors">
             <Projects />
           </div>
-          <div className="bg-white rounded-lg shadow-sm p-8">
+          <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-sm p-8 hover:bg-white/80 transition-colors">
             <Certifications />
           </div>
         </div>
