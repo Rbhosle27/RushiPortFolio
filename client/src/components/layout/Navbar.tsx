@@ -1,5 +1,7 @@
 import { Link } from "wouter";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { Button } from "@/components/ui/button";
+import { FileDown } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -29,6 +31,12 @@ export default function Navbar() {
                 {section}
               </a>
             ))}
+            <Link href="/resume">
+              <Button variant="outline" size="sm" className="gap-2">
+                <FileDown className="h-4 w-4" />
+                Resume
+              </Button>
+            </Link>
             <ThemeToggle />
           </div>
         </div>
