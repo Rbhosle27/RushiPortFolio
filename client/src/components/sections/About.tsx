@@ -42,9 +42,9 @@ export default function About() {
                 </div>
               </div>
               <div className="flex justify-center items-center">
-                <div className="w-64 h-64 rounded-full overflow-hidden">
+                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20">
                   <img
-                    src="/attached_assets/WhatsApp Image 2025-02-15 at 9.12.11 PM.jpeg"
+                    src="/assets/profile.jpeg"
                     alt="Rushikesh Bhosle"
                     className="w-full h-full object-cover"
                   />
