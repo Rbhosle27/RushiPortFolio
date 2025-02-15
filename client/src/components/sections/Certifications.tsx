@@ -17,13 +17,11 @@ const certifications = [
     organization: "Seed InfoTech",
     certNo: "182014",
     icon: FaCode,
-    image: "/assets/certificates/web-designing.jpg" // Added image path
   },
   {
     name: "Software Testing",
     organization: "Quantum Academy",
     icon: FaCheckCircle,
-    image: "/assets/certificates/software-testing.jpg" // Added image path
   },
   {
     name: "RPA Foundation",
@@ -52,40 +50,40 @@ export default function Certifications() {
         <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert) => (
             <Dialog key={cert.name}>
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                    {cert.icon && (
-                      <cert.icon className="w-8 h-8 text-primary" />
-                    )}
-                    <CardTitle>{cert.name}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    {cert.organization}
-                    {cert.certNo && ` - Cert No: ${cert.certNo}`}
-                  </p>
-                  {cert.image && (
-                    <DialogTrigger asChild>
-                      <Button variant="outline" className="w-full">
+              <DialogTrigger asChild>
+                <Card className="cursor-pointer hover:bg-accent transition-colors">
+                  <CardHeader>
+                    <div className="flex items-center gap-4">
+                      {cert.icon && (
+                        <cert.icon className="w-8 h-8 text-primary" />
+                      )}
+                      <CardTitle>{cert.name}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">
+                      {cert.organization}
+                      {cert.certNo && ` - Cert No: ${cert.certNo}`}
+                    </p>
+                    {cert.image && (
+                      <div className="flex items-center text-primary">
                         <FaSearch className="mr-2" />
                         View Certificate
-                      </Button>
-                    </DialogTrigger>
-                  )}
-                </CardContent>
-              </Card>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </DialogTrigger>
               {cert.image && (
-                <DialogContent className="max-w-3xl">
+                <DialogContent className="max-w-4xl">
                   <DialogHeader>
                     <DialogTitle>{cert.name} Certificate</DialogTitle>
                   </DialogHeader>
-                  <div className="relative aspect-[1.4/1] w-full overflow-hidden rounded-lg">
+                  <div className="relative w-full h-[80vh] overflow-hidden rounded-lg">
                     <img
                       src={cert.image}
                       alt={`${cert.name} Certificate`}
-                      className="object-contain w-full h-full"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </DialogContent>
