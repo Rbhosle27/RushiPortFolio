@@ -39,7 +39,7 @@ export default function Skills() {
         <h2 className="text-3xl font-bold mb-8">Skills</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {Object.entries(skills).map(([category, skillsList]) => (
-            <Card key={category} className="bg-white/70 hover:bg-white/90 transition-colors backdrop-blur-sm">
+            <Card key={category}>
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4">{category}</h3>
                 <div className="space-y-4">
