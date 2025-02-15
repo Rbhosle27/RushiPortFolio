@@ -20,7 +20,7 @@ const certifications = [
   },
   {
     name: "Software Testing",
-    organization: "Quantum Academy",
+    organization: "BUG Spoter",
     icon: FaCheckCircle,
   },
   {
@@ -51,7 +51,7 @@ export default function Certifications() {
           {certifications.map((cert) => (
             <Dialog key={cert.name}>
               <DialogTrigger asChild>
-                <Card className="cursor-pointer hover:bg-accent transition-colors">
+                <Card className="cursor-pointer hover:bg-accent/5 transition-colors bg-white/80 backdrop-blur-sm border border-accent/10">
                   <CardHeader>
                     <div className="flex items-center gap-4">
                       {cert.icon && (
