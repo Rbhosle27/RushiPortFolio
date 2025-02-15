@@ -2,5 +2,6 @@
   "variant": "professional",
   "primary": "rgb(66, 133, 244)",
   "appearance": "light",
-  "radius": 0.5
+  "radius": 0.5,
+  "background": "rgb(250, 251, 252)"
 }
