@@ -10,7 +10,7 @@ import FooterPage from "@/components/sections/Footer";
 export default function Home() {
   const { theme } = useTheme();
   return (
-    <div className="min-h-screen bg-[#FAFBFC]">
+    <div className="min-h-screen bg-[#000000]">
       <Navbar />
       <main
         className="container mx-auto px-4 py-20"
